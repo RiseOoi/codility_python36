@@ -10,7 +10,7 @@
 
 ---
 
-## How the files are structured?
+## How are the files structured?
 
 Usually it's *(Lesson number numerically)*-*(Problem number alphabetically)*-*(Problem Title)*
 
