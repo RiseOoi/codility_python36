@@ -13,7 +13,7 @@
 
 ## How the files are structured?
 
-Usually it's <Lesson number numerically>-<Problem number alphabetically>-<Problem Title>
+Usually it's *Lesson number numerically*-*Problem number alphabetically*-*Problem Title*
 
 But the *'r'* in `1r-Iterations.py` means reading section.
 
