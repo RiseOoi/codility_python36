@@ -1,7 +1,7 @@
 # Note that the reading section uses Python 2 but
 # the coding section requires Python 3.6
 
-# reverse an array inline
+# reversing an array inline
 A = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 A.reverse()  # note that it doesn't return anything
 print(A)
