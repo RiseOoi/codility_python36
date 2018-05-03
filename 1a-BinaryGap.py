@@ -31,9 +31,9 @@ def solution(N):
     binary_gap = 0
     max_binary_gap = 0
 
-    # There are no 0s in front of the most significant 1
-    # But there may be 0s in the least significant bits
-    # So the first thing is to find the first/least significant 1
+    # There are no 0s in front of the most significant 1 (the most left bit)
+    # But there may be 0s in the least significant bits (bits on right side)
+    # So the first thing to do is to find the first or least significant 1
     while N >= 1:
         bit = N % 2
         if bit:
