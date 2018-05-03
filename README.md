@@ -5,7 +5,7 @@
 In short, this repository is an unofficial solutions to lessons provided by
 [codility](https://app.codility.com/programmers/lessons) in pure Python 3.6.
 
-All solutions score 100% and only use the standard library.
+All solutions score 100% and use only the standard library.
 
 Also, I tro to provide extensive comments for study so every .py file is self contained.
 
