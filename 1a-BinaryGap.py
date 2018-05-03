@@ -10,7 +10,9 @@
 # The number 15 has binary representation 1111 and has no binary gaps.
 
 # Write a function:
+
 # def solution(N);
+
 # that, given a positive integer N,
 # returns the length of its longest binary gap.
 # The function should return 0 if N doesn't contain a binary gap.
@@ -19,8 +21,8 @@
 # longest binary gap is of length 5.
 
 # Assume that:
-
 # N is an integer within the range [1..2,147,483,647].
+
 # Complexity:
 
 # expected worst-case time complexity is O(log(N));
