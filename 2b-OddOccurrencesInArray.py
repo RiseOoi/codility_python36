@@ -44,7 +44,7 @@
 
 # additional memory requirement
 # this solution obtains 100% on codility, but worst case space complexity is
-# actually O(N//2) because the first half may don't have complements at all
+# actually O(N//2 + 1) because the first half may not have complements at all
 # so the removal from set is not quick enough
 def solution_set(A):
     hset = set()
@@ -58,11 +58,12 @@ def solution_set(A):
 
 
 # here's a true O(1) space solution
-# since we assume everyone has complements but only one element
+# since we assume every element but one must have a complement
 # we can exploit this knowledge using the XOR property
-# why this works? because if there must exist a complement, they got killed off
-# eg. 9's binary form is 1001, since there must be even number of 9s,
+# why this works? any pair of element-complement quickly gets killed off
+# eg. 9's binary form is 1001, since if there must be even number of 9s,
 # 1001 XOR 1001 is 0000, so they will cancel each other out in ret
+# even with four 9s, 1001 ^ 1001 ^ 1001 ^ 1001 = 0000
 def solution(A):
     ret = 0
     # print(f"you can try printing the binary representation: {ret:b}")
