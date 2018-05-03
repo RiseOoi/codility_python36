@@ -42,20 +42,21 @@ print(reverse_zip(A))
 
 # =============================================================================
 A = 'How about a string?'
+# if you try reverse() on a string, you will get
+# TypeError: 'str' object does not support item assignment
+# because in Python, strings are immutable
+# that means, there is no such thing as inline string reversal in Python
 
 
-def reverse_and_able_on_string(A):
+def reverse_duplicate(A):
+    # this reverse function duplicates, but it can be used on strings
     return A[::-1]
 
 
 print(A)  # note that A doesn't change, so [::-1] duplicates a new string/array
-print(reverse_and_able_on_string(A))
+print(reverse_duplicate(A))
 
 
 # another slower way
 def reverse_string_slower(A):
     return ''.join(reversed(A))
-
-
-# there is no such thing as inline string reversal in Python
-# because in Python, strings are immutable
