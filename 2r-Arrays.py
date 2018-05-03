@@ -1,4 +1,5 @@
-# Note that the reading section uses Python 2 but
+# Note that the reading section uses Python 2 for generators but
+# Python 3 for division while
 # the coding section requires Python 3.6
 
 # reversing an array inline
