@@ -57,5 +57,5 @@ def reverse_string_slower(A):
     return ''.join(reversed(A))
 
 
-# there is no such thing as inline string reversal
+# there is no such thing as inline string reversal in Python
 # because in Python, strings are immutable
