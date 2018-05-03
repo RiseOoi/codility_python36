@@ -57,6 +57,7 @@ def solution(N):
 
 # Of course you can merge them into one
 def solution_flag(N):
+    # binary = []  # incase you want to know the binary representation
     binary_gap = 0
     max_binary_gap = 0
     flag = False
