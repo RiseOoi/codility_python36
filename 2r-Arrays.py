@@ -42,6 +42,7 @@ print(reverse_zip(A))
 
 # =============================================================================
 A = 'How about a string?'
+
 # if you try reverse() on a string, you will get
 # TypeError: 'str' object does not support item assignment
 # because in Python, strings are immutable

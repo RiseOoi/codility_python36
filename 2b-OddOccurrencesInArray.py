@@ -2,6 +2,8 @@
 # this solution obtains 100% on codility, but worst case space complexity is
 # actually O(N//2) because the first half may don't have complements at all
 # so the removal from set is not quick enough
+
+
 def solution_set(A):
     hset = set()
     for x in A:
