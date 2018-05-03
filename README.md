@@ -1,15 +1,27 @@
 # codility_python36
 
-(I will clean up the formatting of README.md later for quick/easy linking to each problem)
+*I will clean up the formatting of README.md later for quick/easy linking to each problem*
 
-In short, this repository is an unofficial solutions to lessons provided by
+* In short, this repository is an unofficial solutions to lessons provided by
 [codility](https://app.codility.com/programmers/lessons) in pure Python 3.6.
 
-All solutions score 100% and use only the standard library.
+* All solutions score 100% and use only the standard library.
 
-Also, I tro to provide extensive comments for study so every .py file is self contained.
+* Also, I try to provide extensive comments for study so every .py file is self contained.
 
 ---
+
+## How the files are structured?
+
+Usually it's <Lesson number numerically>-<Problem number alphabetically>-<Problem Title>
+
+But the *'r'* in `1r-Iterations.py` means reading section.
+
+I recommend everyone reads the reading section before diving in.
+
+---
+
+## Notes:
 
 Take note that I am using only CPython implementation for this particular repo
 because... well... codility uses CPython 3.6.
