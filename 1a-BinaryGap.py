@@ -41,6 +41,10 @@ def solution(N):
 
         N = N // 2
 
+    # of course you can also do the follwing
+    # while N > 0 and not N % 2:
+    #     N //= 2
+
     # After we found the first/LS 1, we can start counting the 0s between 1s
     while N >= 1:
         bit = N % 2
