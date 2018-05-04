@@ -6,6 +6,8 @@
 
 * All solutions score 100% and use only the standard library.
 
+* I am proud to claim this is by far the most modern solutions. *(As of April 2018)*
+
 
 ---
 
@@ -15,7 +17,7 @@
 
 * And so, I try to provide extensive comments and additional Python information for study. If you don't like the additional comments, either ignore them or try other repos.
 
-* Acutally, I wrote all these to teach myself Python 3.6 better, I will be delighted if it helps anyone. If it doesn't, well, please try other repos.
+* Actually, I wrote all these to teach myself Python 3.6 better, I will be delighted if it helps anyone. If it doesn't, well, please try other repos.
 
 * I also try to provide constructive criticisms of the incomplete/incorrect codility solutions that didn't cover all the cases or are not flexible enough.
 
