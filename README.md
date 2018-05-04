@@ -11,15 +11,15 @@
 
 ## Why this repo?
 
-* There are not much of good repos of codility's solutions in Python 3.6.
+* There are not much of good repos of codility's solutions in Python 3.6. They are usually copy-pastas of the popular Python 2 solutions from other sites and not only they are outdated, hard to read, a lot of them never take advantage of Python 3.6+'s language features.
 
-* And I actually wrote all these to teach myself, I will be glad if it helps you. If it doesn't, well, please try other repos.
+* And so, I try to provide extensive comments and additional Python information for study. If you don't like the additional comments, either ignore them or try other repos.
 
-* Also, I try to provide extensive comments and additional Python information for study. If you don't like the additional comments, either ignore them or try other repos.
+* Acutally, I wrote all these to teach myself Python 3.6 better, I will be delighted if it helps anyone. If it doesn't, well, please try other repos.
 
 * I also try to provide constructive criticisms of the incomplete/incorrect codility solutions that didn't cover all the cases or are not flexible enough.
 
-* In fact, you will sometimes find solutions that perform better than official/unofficial solutions.
+* In fact, you will often find solutions that perform better than official codility solutions (if there is one) and unofficial solutions from other sites.
 
 * In some cases that have multiple very possibly good answers, time measurements and deeper explanations are also be provided.
 
@@ -56,8 +56,16 @@ I recommend everyone reads the reading section before diving in.
 Take note that I am using CPython 3.6 implementation for this particular repo
 because... well... codility uses CPython 3.6.
 
-That means, if I took advantage of some features of CPython 3.6 and
+That means, I took advantage of a lot of features of CPython 3.6 and
 even if it ended up 100% score in codility it doesn't mean it will perform
 perfectly in versions/implementations other than CPython 3.6.
 
-That means, please for Guido's sake, don't use any of these in production.
+Moreover, it is very possible that you cannot convert many of my code (that depended on Python's prowness) to other programming languages.
+
+Finally, since this is a pure CPython 3.6 implementation, there exists far better solutions using other implementations (PyPy) and non-standard libraries (SciPy/NumPy). Just take that in mind.
+
+---
+
+## Contributions:
+
+Although I think I may have the best (most up-to-date, modern, Pythonic, best in terms of time complexity and space complexity) solutions so far, I may miss a few. So if you find any bugs or errors, or better, if you find even better solutions (within the constraints of CPython 3.6), please feel free to make an issue or pull request.
