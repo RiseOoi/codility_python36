@@ -24,7 +24,7 @@ def reverse(A):
 
 print(reverse(A))
 
-# you can also zip them but too lengthy and hard to read
+# you can also zip them but it will be too lengthy and hard to read
 # for i, j in zip(range(len(A) // 2), range(len(A)-1, (len(A)-1) // 2, -1)):
 # so you can improve on the generator part
 # note that [::-1] doesn't create duplicates for generators
