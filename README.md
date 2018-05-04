@@ -33,19 +33,9 @@
 
 ## Some Advice
 
-* The debugging process is mediocre when compared to leetcode. So to debug, try the following code:
-```
-def solution(A):
-    test_cases = []
-    for a in A:
-        test_cases.append(a)
+* The debugging process is mediocre when compared to leetcode.
 
-    print(test_cases)
-
-    # or `print([a for a in A])` if you like golf
-    # or just `print(A)` if it allows (sometimes it doesn't)
-```
-to check which test_cases you failed. But this is not foolproof because there exists a limit of test_cases you can print. (You will understand my pain sooner or later)
+* So to debug, try `print(A)` or `print([do something with a for a in A])` to check which test_cases you failed. But this is not foolproof because there exists a limit of test_cases you can print. (You will understand my pain sooner or later)
 
 codility should upgrade this immediately and provides more useful information for failed test cases.
 
