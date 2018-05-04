@@ -81,20 +81,19 @@ def solution(N, A):
     max_counter = 0
 
     for a in A:
-        # max counter case
-        if a == N + 1:
-            if len(counters) >= 1:
-                # updates storage and adds it with current highest value
-                max_counter += max(counters.values())
-                counters = {}
-
-        # elif a >= 1 and a <= N:  # these conditions are assumed
         # normal counting case
-        else:
+        if a >= 1 and a <= N:  # these conditions are assumed anyway
             if a in counters:
                 counters[a] += 1
             else:
                 counters[a] = 1
+
+        # max counter case
+        elif a == N + 1:
+            if len(counters) >= 1:
+                # updates storage and adds it with current highest value
+                max_counter += max(counters.values())
+                counters = {}  # reset and continue with normal counting
 
     ret = [max_counter for i in range(N)]
     for key, value in counters.items():
@@ -105,3 +104,56 @@ def solution(N, A):
 
 print(solution(1, [2, 1, 1, 2, 1]))
 print(solution(5, [3, 4, 4, 6, 1, 4, 4]))
+
+# note that although solution above scores 100%, max(counters.values()) is O(N)
+# in worst case scenario. However, note that dictionary is fast and the
+# bigger a random case gets, the sparser the case usually becomes
+# the bigger a random case gets, the less chance it will become max_counter too
+# so comparison every single time is actually slower than a one time O(N)
+# don't believe me? well, let's test it out
+
+def solution_alternative(N, A):
+    counters = {}
+    max_counter = 0
+    current_max = 0
+
+    for a in A:
+        # normal counting case
+        if a >= 1 and a <= N:  # these conditions are assumed anyway
+            if a in counters:
+                counters[a] += 1
+            else:
+                counters[a] = 1
+
+            # stores current highest value whenever it finds one
+            current_max = max(current_max, counters[a])  # quick comparison
+
+        # max counter case
+        elif a == N + 1:
+            if len(counters) >= 1:
+                # updates max_counter and adds it with current highest value
+                max_counter += current_max
+                current_max = 0  # reset current_max
+                counters = {}  # reset and continue with normal counting
+
+    ret = [max_counter for i in range(N)]
+    for key, value in counters.items():
+        ret[key - 1] += value
+
+    return ret
+
+
+# speed of solution on large, extreme_large cases:
+# large_random1: 0.096s, large_random2: 0.180s
+# extreme_large with all max_counter operations: 0.240s, 0.216s
+
+# speed of solution_alternative on extreme_large cases:
+# large_random1: 0.100s, large_random2: 0.200s
+# extreme_large with all max_counter operations: 0.240s, 0.252s
+
+# behold, using max(dict.values()) is surprisingly slightly faster
+# which seemingly shouldn't really happen!
+# well, actually it's just a Python trick
+# calling a C implemented max() gives higher throughput for a long list
+# than calling a max() everytime inside a Python for loop (infamously slow)
+# so keep that in mind regardless of you are using Python or other languages
