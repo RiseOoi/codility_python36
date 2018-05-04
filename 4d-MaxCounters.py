@@ -112,6 +112,7 @@ print(solution(5, [3, 4, 4, 6, 1, 4, 4]))
 # so comparison every single time is actually slower than a one time O(N)
 # don't believe me? well, let's test it out
 
+
 def solution_alternative(N, A):
     counters = {}
     max_counter = 0
@@ -157,3 +158,10 @@ def solution_alternative(N, A):
 # calling a C implemented max() gives higher throughput for a long list
 # than calling a max() everytime inside a Python for loop (infamously slow)
 # so keep that in mind regardless of you are using Python or other languages
+
+# additional information:
+# to get the index of the maximum number of a list
+# or list.index(max(list))
+# to get the index of the maximum number of a dict
+# max(dict, key=dict.get)
+# note that you can also always sort them first then get the last number
